@@ -6,6 +6,7 @@ const carritoFunciones = document.getElementById("carrito-funciones");
 const carritoCompro = document.getElementById("carrito-compro");
 const botonVaciar = document.getElementById("carrito-vaciar");
 const campoTotal = document.getElementById("total");
+const botonComprar = document.getElementById("carrito-comprar"); 
 
 
 function cargarProductosAlCarrito(){
@@ -98,4 +99,17 @@ function carritoVaciar(){
 
    
 }
+
+
+botonComprar.addEventListener("click", compro);
+console.log(botonComprar);
+
+function compro(){
+    Swal.fire({
+        icon: 'success',
+        title: 'Muchas gracias por tu compra',
+        showConfirmButton: false,
+        timer: 1500
+      })
+   }
 
